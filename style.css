@@ -14,15 +14,23 @@
 
 .gallery{justify-content:flex-start}
 
-/* Two consistent sage surfaces replace the beige fabric background. */
-:root{--sage-light:#cdd0bf;--sage-surface-deep:#b0b69e;--muted:#555b4d;--sage-deep:#5e6a50;--mist:#eff0e8}
-body{background:var(--sage-light)}
+/* Reference palette and compositing from sgbrow.co.kr, verified 2026-10-19. */
+:root{--muted:#5b5446;--ink:#14110c;--sage-deep:#7c876c;--mist:#efeae0}
+body{background-color:#f7f5f1;background-image:linear-gradient(rgba(247,245,241,.52),rgba(247,245,241,.58)),url("assets/sage-fabric-reference.jpg");background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat}
 body:before{display:none}
-main>section.sage-light,.pill-section{background:var(--sage-light)}
-main>section.sage-deep{background:var(--sage-surface-deep)}
-.pills p,.feature-list p{background:#f6f6ef;border-color:#a6ae96}
-.bubbles p:nth-child(even),.table-row>p,.director-note{background:#eff0e8}
-.table-head>span{background:#e1e5d7}
-.process-promise{background:#f4f5ed;border-color:#929d80}
-.photo-card{background:#eff0e8}
-.timeline li:not(:last-child):before{background:#7d896c}
+main>section.sage-light,main>section.sage-deep{background:transparent}
+.pill-section{background:rgba(239,236,228,.45)}
+main>section.reference-compare{background:rgba(239,236,228,.32)}
+main>section.reference-worry,main>section.review-section{background:linear-gradient(180deg,rgba(239,234,224,.5),rgba(247,245,241,.2))}
+main>section.reference-promise{background:rgba(239,234,224,.55)}
+main>section.revisit{background:rgba(239,236,228,.4)}
+main>section#offer{background:linear-gradient(180deg,rgba(239,234,224,.5),rgba(239,236,228,.62))}
+main>section.reservation{background:rgba(239,236,228,.45)}
+.pills p{background:#fff;border-color:var(--sage)}
+.feature-list p,.table-row>p,.director-note{background:var(--mist)}
+.feature-list span{background:var(--sage-deep)}
+.bubbles p:nth-child(even){background:#fff}
+.table-head>span{background:var(--ivory)}
+.process-promise{background:#fff;border-color:var(--sage)}
+.photo-card{background:#fff}
+.timeline li:not(:last-child):before{background:#d9dccf}

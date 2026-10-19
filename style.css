@@ -9,3 +9,9 @@ body:before{background:linear-gradient(#f7f5f180,#f7f5f195),url('assets/ivory-fa
 .closing .philosophy-statement{display:block;margin-top:18px}
 
 .process-promise{display:flex;align-items:center;gap:16px;max-width:680px;margin:12px auto 0;padding:24px;border:1px solid #d7cbb8;border-radius:18px;background:#eee5d5;color:var(--espresso);box-shadow:var(--shadow);font-size:19px;line-height:1.7}.process-promise>span{flex:0 0 36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--espresso);color:white;font-size:21px}.process-promise strong{font-weight:700}@media(max-width:700px){.process-promise{font-size:17px;padding:20px;gap:12px}}
+
+/* Preserve the framing of the supplied privacy-masked photos. */
+.signature-photo[src="assets/signature-mosaic.png"]{height:auto;aspect-ratio:auto}
+.director-card>img[src="assets/director-mosaic.png"]{height:auto;aspect-ratio:4/5;object-fit:cover}
+
+.gallery{justify-content:flex-start}

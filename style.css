@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 /* Original ivory fabric artwork, softened for reading. */
 body:before{background:linear-gradient(#f7f5f180,#f7f5f195),url('assets/ivory-fabric.png') center/cover no-repeat;opacity:1}
+
+.closing .philosophy-statement{display:block;margin-top:18px}

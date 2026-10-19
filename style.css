@@ -3,8 +3,6 @@
 @media(min-width:1500px){.hero-content{bottom:110px}.hero h1{font-size:58px}}
 @media(max-width:700px){section{padding:64px 22px}h2{font-size:29px;letter-spacing:-.8px}.section-head{margin-bottom:30px}.section-head>p:last-child:not(.eyebrow){font-size:15px}.eyebrow{font-size:11px;letter-spacing:3px}.hero{min-height:720px}.hero-brand{left:22px;top:22px;font-size:29px}.hero-brand span{font-size:8px;letter-spacing:2px}.hero-content{bottom:88px;padding:0 22px}.hero h1{font-size:33px;line-height:1.55;letter-spacing:-1px}.hero h1 em{font-size:1.3em}.handwriting{font-size:25px;margin-bottom:16px}.hero-meta{font-size:12px;margin-top:16px}.hero .button{margin-top:20px;padding:14px 16px;font-size:15px}.hero video{object-position:center 32%}.pills{flex-direction:column;max-width:420px}.pills p{font-size:17px;padding:14px 18px}.dark-section .section-head h2{font-size:27px}.booking-row a{font-size:14px}.feature-list p{font-size:14px;padding:16px;gap:12px}.bubbles p{font-size:15px;padding:18px;max-width:92%}.closing{font-size:15px}.table-row>*{padding:16px 12px;font-size:13px}.gallery{justify-content:flex-start;gap:14px;padding:0 22px}.photo-card{flex-basis:82%}.photo-card img{height:350px}.timeline li{gap:18px}.timeline h3{font-size:17px}.timeline p{font-size:14px}.faq summary{font-size:15px;padding-left:18px}.faq details>p{font-size:14px;padding-left:18px}.review-grid{grid-template-columns:1fr;gap:18px}.review-card{padding:24px}.recommend{grid-template-columns:1fr;gap:32px}.recommend>img{height:400px;max-width:430px;margin:auto}.recommend .section-head{text-align:center}.check-list{max-width:400px;margin:auto;font-size:15px}.director-card>img{height:360px}.director-body{padding:26px 22px}.location>img{max-height:520px}.location dl>div{gap:12px;font-size:13px}.sticky-booking .booking-row a{min-height:50px;border-radius:12px;font-size:14px}.price{font-size:68px}.hero-small{margin-top:8px}.down{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
-/* Original ivory fabric artwork, softened for reading. */
-body:before{background:linear-gradient(#f7f5f180,#f7f5f195),url('assets/ivory-fabric.png') center/cover no-repeat;opacity:1}
 
 .closing .philosophy-statement{display:block;margin-top:18px}
 
@@ -15,3 +13,16 @@ body:before{background:linear-gradient(#f7f5f180,#f7f5f195),url('assets/ivory-fa
 .director-card>img[src="assets/director-mosaic.png"]{height:auto;aspect-ratio:4/5;object-fit:cover}
 
 .gallery{justify-content:flex-start}
+
+/* Two consistent sage surfaces replace the beige fabric background. */
+:root{--sage-light:#cdd0bf;--sage-surface-deep:#b0b69e;--muted:#555b4d;--sage-deep:#5e6a50;--mist:#eff0e8}
+body{background:var(--sage-light)}
+body:before{display:none}
+main>section.sage-light,.pill-section{background:var(--sage-light)}
+main>section.sage-deep{background:var(--sage-surface-deep)}
+.pills p,.feature-list p{background:#f6f6ef;border-color:#a6ae96}
+.bubbles p:nth-child(even),.table-row>p,.director-note{background:#eff0e8}
+.table-head>span{background:#e1e5d7}
+.process-promise{background:#f4f5ed;border-color:#929d80}
+.photo-card{background:#eff0e8}
+.timeline li:not(:last-child):before{background:#7d896c}
